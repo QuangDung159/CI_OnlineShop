@@ -1,65 +1,51 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-
+    <?php $this->load->view("admin/login/head") ?>
 </head>
 
-<body class="nobg loginPage">
-
-<!-- Top fixed navigation -->
-<div class="topNav">
-    <div class="wrapper">
-        <div class="userNav">
-            <ul>
-                <li><a href="#" title=""><img src="images/icons/topnav/mainWebsite.png"
-                                              alt=""/><span>Main website</span></a></li>
-                <li><a href="#" title=""><img src="images/icons/topnav/profile.png"
-                                              alt=""/><span>Contact admin</span></a></li>
-                <li><a href="#" title=""><img src="images/icons/topnav/messages.png" alt=""/><span>Support</span></a>
-                </li>
-                <li><a href="login.html" title=""><img src="images/icons/topnav/settings.png"
-                                                       alt=""/><span>Settings</span></a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-
+<body class="nobg loginPage" style="min-height:100%;">
 
 <!-- Main content wrapper -->
-<div class="loginWrapper">
-    <div class="loginLogo"><img src="images/loginLogo.png" alt=""/></div>
-    <div class="widget">
-        <div class="title"><img src="images/icons/dark/files.png" alt="" class="titleIcon"/><h6>Login panel</h6></div>
-        <form action="index.html" id="validate" class="form">
+<div class="loginWrapper" style="top:45%;">
+
+    <div class="widget" id="admin_login" style="height:auto; margin:auto;">
+        <div class="title"><img src="<?php echo public_url("admin") ?>images/icons/dark/laptop.png" alt=""
+                                class="titleIcon"/>
+            <h6>Đăng nhập</h6>
+        </div>
+
+        <form class="form" id="form" action="" method="post">
             <fieldset>
                 <div class="formRow">
-                    <label for="login">Username:</label>
-                    <div class="loginInput"><input type="text" name="login" class="validate[required]" id="login"/>
-                    </div>
+                    <label for="param_username">Tên đăng nhập:</label>
+                    <div class="loginInput"><input type="text" name="username" id="param_username"/></div>
+                    <div class="clear"></div>
                 </div>
 
                 <div class="formRow">
-                    <label for="pass">Password:</label>
-                    <div class="loginInput"><input type="password" name="password" class="validate[required]"
-                                                   id="pass"/></div>
+                    <label for="param_password">Mật khẩu:</label>
+                    <div class="loginInput"><input type="password" name="password" id="param_password"/></div>
+                    <div class="clear"></div>
                 </div>
 
                 <div class="loginControl">
-                    <div class="rememberMe"><input type="checkbox" id="remMe" name="remMe"/><label for="remMe">Remember
-                            me</label></div>
-                    <input type="submit" value="Log me in" class="dredB logMeIn"/>
+                    <input type='hidden' name="submit" value='1'/>
+                    <input type="submit" value="Đăng nhập" class="dredB logMeIn"/>
+                    <div class="clear"></div>
                 </div>
             </fieldset>
         </form>
     </div>
+
 </div>
 
 <!-- Footer line -->
 <div id="footer">
-    <div class="wrapper">As usually all rights reserved. And as usually brought to you by <a
-                href="http://themeforest.net/user/Kopyov?ref=kopyov" title="">Eugene Kopyov</a></div>
+    <?php $this->load->view("admin/login/footer") ?>
 </div>
-
 
 </body>
 </html>

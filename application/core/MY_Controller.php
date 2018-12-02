@@ -8,6 +8,9 @@
 
 class MY_Controller extends CI_Controller
 {
+    // Biến gửi data
+    public $data = array();
+
     function __construct()
     {
         // Kế thừa từ CI_Controller

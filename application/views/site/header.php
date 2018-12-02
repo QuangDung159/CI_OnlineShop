@@ -1,10 +1,10 @@
 <!-- The box-header-->
 
 <link type="text/css"
-      href="<?php echo public_url() ?>/js/jquery/autocomplete/css/smoothness/jquery-ui-1.8.16.custom.css"
+      href="<?php echo public_url() ?>js/jquery/autocomplete/css/smoothness/jquery-ui-1.8.16.custom.css"
       rel="stylesheet">
 <script type="text/javascript"
-        src="<?php echo public_url() ?>/js/jquery/autocomplete/jquery-ui-1.8.16.custom.min.js"></script>
+        src="<?php echo public_url() ?>js/jquery/autocomplete/jquery-ui-1.8.16.custom.min.js"></script>
 
 <script type="text/javascript">
     $(function () {
@@ -16,7 +16,7 @@
 <div class="top"><!-- The top -->
     <div id="logo"><!-- the logo -->
         <a href="" title="Học lập trình website với PHP và MYSQL">
-            <img src="<?php echo public_url("site") ?>/images/logo.jpg" alt="Học lập trình website với PHP và MYSQL">
+            <img src="<?php echo public_url("site") ?>images/logo.jpg" alt="Học lập trình website với PHP và MYSQL">
         </a>
     </div><!-- End logo -->
 
@@ -25,7 +25,7 @@
         <a href="../../index.php" class="cart_link">
             Giỏ hàng <span id="in_cart">0</span> sản phẩm
         </a>
-        <img alt="cart bnc" src="<?php echo public_url("site") ?>/images/cart.png">
+        <img alt="cart bnc" src="<?php echo public_url("site") ?>images/cart.png">
     </div>
     <div id="search"><!-- the search -->
         <form method="get" action="../../index.php">

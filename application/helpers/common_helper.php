@@ -8,5 +8,5 @@
 function public_url($url = "")
 {
     // base_url đã được config trong config.php
-    return base_url("public/" . $url);
+    return base_url("public/" . $url . "/");
 }

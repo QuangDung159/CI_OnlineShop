@@ -11,7 +11,9 @@ class Home extends CI_Controller
     function index()
     {
         $data = array();
+        // gán đường dẫn vào biến temp
         $data["temp"] = "site/home/index";
+        // truyền biến temp qua "views/site/layout"
         $this->load->view("site/layout", $data);
     }
 }
